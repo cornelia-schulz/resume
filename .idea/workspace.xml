@@ -33,22 +33,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.307693" vertical-offset="4480" max-vertical-offset="6375">
-              <caret line="320" column="1" selection-start-line="320" selection-start-column="1" selection-end-line="320" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.57641196" vertical-offset="5578" max-vertical-offset="6420">
+              <caret line="395" column="23" selection-start-line="395" selection-start-column="23" selection-end-line="395" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resumeBuilder.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="resumeBuilder.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/resumeBuilder.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3327674" vertical-offset="2849" max-vertical-offset="6585">
-              <caret line="203" column="139" selection-start-line="203" selection-start-column="139" selection-end-line="203" selection-end-column="139" />
+            <state vertical-scroll-proportion="-11.576923" vertical-offset="2849" max-vertical-offset="6585">
+              <caret line="210" column="3" selection-start-line="199" selection-start-column="0" selection-end-line="210" selection-end-column="3" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.show-more.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/jquery.show-more.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#43#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,14 +93,15 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/js/helper.js" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/js/resumeBuilder.js" />
+        <option value="$PROJECT_DIR$/js/jquery.show-more.js" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="206" />
-    <option name="y" value="123" />
+    <option name="x" value="295" />
+    <option name="y" value="25" />
     <option name="width" value="1194" />
     <option name="height" value="748" />
   </component>
@@ -249,7 +262,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="206" y="123" width="1194" height="748" extended-state="0" />
+    <frame x="295" y="25" width="1194" height="748" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -307,14 +320,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.307693" vertical-offset="4480" max-vertical-offset="6375">
-          <caret line="320" column="1" selection-start-line="320" selection-start-column="1" selection-end-line="320" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/helper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-24.846153" vertical-offset="74" max-vertical-offset="3660">
@@ -328,8 +333,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/resumeBuilder.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3327674" vertical-offset="2849" max-vertical-offset="6585">
-          <caret line="203" column="139" selection-start-line="203" selection-start-column="139" selection-end-line="203" selection-end-column="139" />
+        <state vertical-scroll-proportion="-11.576923" vertical-offset="2849" max-vertical-offset="6585">
+          <caret line="210" column="3" selection-start-line="199" selection-start-column="0" selection-end-line="210" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.show-more.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57641196" vertical-offset="5578" max-vertical-offset="6420">
+          <caret line="395" column="23" selection-start-line="395" selection-start-column="23" selection-end-line="395" selection-end-column="23" />
           <folding />
         </state>
       </provider>
