@@ -47,7 +47,7 @@ var HTMLonlineSchool = " - %data%</a>";
 var HTMLonlineDates = "<div class='date-text'>%data%</div></div>";
 var HTMLonlineReadMore = "<a href='#' class='e_read_more education-entry'>Show More</a><br/>";
 var HTMLonlineMoreCourses = "<span id ='coursesMoreText' style='display: none'></span>";
-var HTMLonlineReadLess = "<a href='#' class='e_read_less education-entry'>Show Less</a><br/>";
+var HTMLonlineReadLess = "<br/><a href='#' class='e_read_less education-entry'>Show Less</a>";
 
 var internationalizeButton = "<button>Internationalize</button>";
 var googleMap = "<div id='map'></div>";

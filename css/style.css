@@ -313,6 +313,11 @@ img
 span
 {
     padding: 5px;
+    display: inline;
+}
+
+#coursesMoreText {
+    display: inline;
 }
 
 #skills

@@ -201,7 +201,7 @@ $(function(){ /* to make sure the script runs after page load */
     $('a.w_read_more').click(function(event){ /* find all a.read_more elements and bind the following code to them */
         event.preventDefault(); /* prevent the a from changing the url */
         $(this).hide('slow');
-        $(this).parents('#workExperience').find('#workMoreText').show('slow'); /* show the .more_text span */
+        $(this).parents('#workExperience').find('#workMoreText').css('display', 'inline'); /*use css as show sets display to inline-block*/
     });
     $('a.w_read_less').click(function(event){ /* find all a.read_more elements and bind the following code to them */
         event.preventDefault(); /* prevent the a from changing the url */
@@ -209,6 +209,7 @@ $(function(){ /* to make sure the script runs after page load */
         $(this).parents('#workExperience').find('#workMoreText').hide('fade'); /* hide the .more_text span */
     });
 });
+
 
 
 /* ------------------------PROJECT SECTION---------------------------------- */
@@ -396,7 +397,7 @@ $(function(){ /* to make sure the script runs after page load */
     $('a.e_read_more').click(function(event){ /* find all a.read_more elements and bind the following code to them */
         event.preventDefault(); /* prevent the a from changing the url */
         $(this).hide('fade');
-        $(this).parents('#courses').find('#coursesMoreText').show('fade'); /* show the .more_text span */
+        $(this).parents('#courses').find('#coursesMoreText').css('display', 'inline'); /*use css as show sets display to inline-block*/
     });
     $('a.e_read_less').click(function(event){ /* find all a.read_more elements and bind the following code to them */
         event.preventDefault(); /* prevent the a from changing the url */
