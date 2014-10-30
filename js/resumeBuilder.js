@@ -233,7 +233,7 @@ var projectHistory = {
             "title" : "Portfolio",
             "dates" : "2014",
             "description" : "In this project I used HTML, CSS and the Twitter Bootstrap Framework to create a portfolio for some of my projects",
-            "image" : "images/portfolio.png",
+            "image" : "images/web-portfolio.png",
             "url" : "https://cornelias-portfolio.herokuapp.com/"
         }
     ],
