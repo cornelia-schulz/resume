@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/helper.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=geometry,places"></script>
+    <link href='//fonts.googleapis.com/css?family=Lato:100,300,400%7CRaleway:100,300,400' rel='stylesheet'>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <title>Cornelia Schulz CV</title>
+</head>
+<body>
+    <div class="menu"><img class="menu-img" src="images/menu-icon.png" alt="Menu"></div>
+    <div class="menu-open">
+        <img class="menu-close" src="images/close-icon.png" alt="Close Menu">
+        <h2 class="menu-header">Menu</h2>
+        <ul class="menu-items">
+        </ul>
+    </div>
+    <div id="main">
+        <div id="header" class="center-content">
+            <ul id="topContacts" class="flex-box"></ul>
+        </div>
+        <div class="spacer"></div>
+        <div id="workExperience" class="gray">
+            <h2>Work Experience</h2>
+        </div>
+        <div id="projects">
+            <h2>Projects</h2>
+            <div class="tabs">
+
+            </div>
+        </div>
+        <div id="education" class="gray">
+            <h2>Education</h2>
+        </div>
+        <div id="skills"></div>
+        <div id="courses" class="gray">
+        </div>
+        <div id="mapDiv">
+            <h2>Where I have studied and worked</h2>
+        </div>
+        <div id="letsConnect" class="dark-gray">
+            <h2 class="orange center-text">Get in Touch</h2>
+            <ul id="bottomContacts" class="flex-box"></ul>
+        </div>
+    </div>
+    <script src="js/resumeBuilder.js"></script>
+    <script type="text/javascript">
+        if(document.getElementsByClassName("flex-item").length === 0) {
+            document.getElementById("topContacts").style.display = "none";
+        }
+        if(document.getElementsByTagName("h1").length === 0) {
+            document.getElementById("header").style.display = "none";
+        }
+        if(document.getElementsByClassName("work-entry").length === 0) {
+            document.getElementById("workExperience").style.display = "none";
+        }
+        if(document.getElementsByClassName("tab").length === 0) {
+            document.getElementById("projects").style.display = "none";
+        }
+        if(document.getElementsByClassName("education-entry").length === 0) {
+            document.getElementById("education").style.display = "none";
+        }
+        if(document.getElementsByClassName("flex-item").length === 0) {
+            document.getElementById("letsConnect").style.display = "none";
+        }
+        if(document.getElementById("map") == undefined) {
+            document.getElementById("mapDiv").style.display = "none";
+        }
+    </script>
+</body>
+</html>
