@@ -25,7 +25,6 @@ var HTMLworkLocation = "<div class='location-text'>%data%</div>";
 var HTMLworkDescription = "<p><br>%data%</p></div>";
 var HTMLworkReadMore = "<a href='#' class='w_read_more work-entry'>Show More</a><br/>";
 var HTMLworkMoreWork = "<span id ='workMoreText' style='display: none'></span>";
-var HTMLworkReadLess = "<a href='#' class='w_read_less work-entry'>Show Less</a><br/>";
 
 var HTMLprojectStart = "<div class='project-entry tab' id='%data%'><input type='radio' id='%id%' name='tab-group-1' %checked%>";
 var HTMLprojectLabel = "<label for='%id%'>Project %id+1%</label>"
@@ -47,7 +46,6 @@ var HTMLonlineSchool = " - %data%</a>";
 var HTMLonlineDates = "<div class='date-text'>%data%</div></div>";
 var HTMLonlineReadMore = "<a href='#' class='e_read_more education-entry'>Show More</a><br/>";
 var HTMLonlineMoreCourses = "<span id ='coursesMoreText' style='display: none'></span>";
-var HTMLonlineReadLess = "<br/><a href='#' class='e_read_less education-entry'>Show Less</a>";
 
 var internationalizeButton = "<button>Internationalize</button>";
 var googleMap = "<div id='map'></div>";

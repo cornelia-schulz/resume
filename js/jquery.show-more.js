@@ -3,29 +3,33 @@
  */
 (function($) {
 
-    $.fn.showMore = function() {
-        this(function(event) {
-            event.preventDefault();
-            $(this).hide('slow');
-            $(this).parents(  )
-        })
-    }
+    $.fn.showMore = function(panelId, options) {
+
+        var self = this;
+        var on = false;
+        options = options || {};
+        var expanededLabel = options.expandedLabel || 'Show Less';
+        var contractedLabel = options.contractedLabel || 'Show More';
+
+        this.text(contractedLabel);
+
+        var toggleState = function(toggle){
+            if(toggle) {
+                $(panelId).css('display', 'inline');
+                self.text(expanededLabel);
+                on = true;
+            }else {
+                $(panelId).css('display', 'none');
+                self.text(contractedLabel);
+                on = false;
+            }
+        };
+        toggleState(options.expanded || false);
+
+        return this.click(function(e){
+            toggleState(!on);
+            e.preventDefault();
+        }); // this is the clicked button
+
+    };
 }(jQuery));
-
-
-
-
-
-
-$(function(){ /* to make sure the script runs after page load */
-    $('a.w_read_more').click(function(event){ /* find all a.read_more elements and bind the following code to them */
-        event.preventDefault(); /* prevent the a from changing the url */
-        $(this).hide('slow');
-        $(this).parents('#workExperience').find('#workMoreText').css('display', 'inline'); /*use css as show sets display to inline-block*/
-    });
-    $('a.w_read_less').click(function(event){ /* find all a.read_more elements and bind the following code to them */
-        event.preventDefault(); /* prevent the a from changing the url */
-        $(this).parents('#workExperience').find('a.w_read_more').show('fade');
-        $(this).parents('#workExperience').find('#workMoreText').hide('fade'); /* hide the .more_text span */
-    });
-});

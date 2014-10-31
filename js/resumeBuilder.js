@@ -81,18 +81,7 @@ bio.display();
 google.load("visualization", "1", {packages:["corechart"]});
 google.setOnLoadCallback(drawChart);
 function drawChart() {
-
-    var data = google.visualization.arrayToDataTable([
-        ['Task', 'Years Experience'],
-        ['Translation',     7],
-        ['Localisation', 1.5],
-        ['Project Management',      1],
-        ['HTML',  1],
-        ['Customer Service', 12],
-        ['CSS',    1],
-        ['JavaScript', 0.5],
-        ['Python', 0.3]
-    ]);
+    var data = google.visualization.arrayToDataTable(bio.skills);
 
     var options = {
         title: 'Skills & Experience in Years',
@@ -100,18 +89,15 @@ function drawChart() {
         slices: {  3: {offset: 0.2},
             6: {offset: 0.3},
             5: {offset: 0.4},
-            7: {offset: 0.5},
+            7: {offset: 0.5}
         },
-        pieStartAngle: 50,
+        pieStartAngle: 50
     };
 
     var chart = new google.visualization.PieChart(document.getElementById('skills'));
 
     chart.draw(data, options);
 }
-
-
-
 
 
 /* ------------------------WORK SECTION----------------------------*/
@@ -183,34 +169,20 @@ var workHistory = {
             var work1 = HTMLworkStart + formattedEmployerTitle + HTMLworkDates.replace('%data%', this.work[i].time) + HTMLworkLocation.replace('%data%', this.work[i].location) + HTMLworkDescription.replace('%data%', this.work[i].description);
             $("#workExperience").append(work1);
             }
-        workExperience.append(HTMLworkReadMore,HTMLworkMoreWork);
-
+workExperience.append(HTMLworkMoreWork);
         for(var j = 3; j < this.work.length; j++){
             formattedEmployer = HTMLworkEmployer.replace('%data%', this.work[j].employer);
             formattedTitle = HTMLworkTitle.replace('%data%', this.work[j].position);
             formattedEmployerTitle = formattedEmployer + formattedTitle;
             work1 = HTMLworkStart + formattedEmployerTitle + HTMLworkDates.replace('%data%', this.work[j].time) + HTMLworkLocation.replace('%data%', this.work[j].location) + HTMLworkDescription.replace('%data%', this.work[j].description);
             $("#workMoreText").append(work1);
-            }
-        $("#workMoreText").append(HTMLworkReadLess);
+        }
+        workExperience.append( HTMLworkReadMore);
         }
     }
 workHistory.display();
 
-$(function(){ /* to make sure the script runs after page load */
-    $('a.w_read_more').click(function(event){ /* find all a.read_more elements and bind the following code to them */
-        event.preventDefault(); /* prevent the a from changing the url */
-        $(this).hide('slow');
-        $(this).parents('#workExperience').find('#workMoreText').css('display', 'inline'); /*use css as show sets display to inline-block*/
-    });
-    $('a.w_read_less').click(function(event){ /* find all a.read_more elements and bind the following code to them */
-        event.preventDefault(); /* prevent the a from changing the url */
-        $(this).parents('#workExperience').find('a.w_read_more').show('fade');
-        $(this).parents('#workExperience').find('#workMoreText').hide('fade'); /* hide the .more_text span */
-    });
-});
-
-
+$('a.w_read_more').showMore('#workMoreText', {});
 
 /* ------------------------PROJECT SECTION---------------------------------- */
 var projectHistory = {
@@ -244,21 +216,12 @@ var projectHistory = {
                 var projects = HTMLprojectStart.replace("%id%", "tab-"+i).replace("%data%", "tab"+i).replace("%checked%", "checked") + HTMLprojectLabel.replace("%id%", "tab-"+i).replace("%id+1%", i+1) + HTMLprojectTitle.replace("%data%", this.project[i].title) + HTMLprojectDates.replace("%data%", this.project[i].dates) + HTMLprojectDescription.replace("%data%", this.project[i].description) + HTMLprojectImage.replace("%data%", this.project[i].image).replace("%url%", this.project[i].url);
             }
             else {
-                var projects = HTMLprojectStart.replace("%id%", "tab-"+i).replace("%data%", "tab"+i).replace("%checked%", "") + HTMLprojectLabel.replace("%id%", "tab-"+i).replace("%id+1%", i+1) + HTMLprojectTitle.replace("%data%", this.project[i].title) + HTMLprojectDates.replace("%data%", this.project[i].dates) + HTMLprojectDescription.replace("%data%", this.project[i].description) + HTMLprojectImage.replace("%data%", this.project[i].image).replace("%url%", this.project[i].url);            }
+                projects = HTMLprojectStart.replace("%id%", "tab-"+i).replace("%data%", "tab"+i).replace("%checked%", "") + HTMLprojectLabel.replace("%id%", "tab-"+i).replace("%id+1%", i+1) + HTMLprojectTitle.replace("%data%", this.project[i].title) + HTMLprojectDates.replace("%data%", this.project[i].dates) + HTMLprojectDescription.replace("%data%", this.project[i].description) + HTMLprojectImage.replace("%data%", this.project[i].image).replace("%url%", this.project[i].url);            }
             $(".tabs").append(projects);
         }
     }
 }
 projectHistory.display();
-
-
-
-
-
-
-
-
-
 
 /* ----------------------------EDUCATION SECTION----------------------------- */
 var education = {
@@ -384,40 +347,17 @@ var education = {
             var course = HTMLonlineTitle.replace("%data%", this.courses[j].title).replace("%url%", this.courses[j].url) + HTMLonlineSchool.replace("%data%", this.courses[j].provider) + HTMLonlineDates.replace("%data%", this.courses[j].dates);
             courses.append(course);
         }
-        courses.append(HTMLonlineReadMore, HTMLonlineMoreCourses);
+        courses.append(HTMLonlineMoreCourses);
         for(var k = 3; k < this.courses.length; k++) {
             course = HTMLonlineTitle.replace("%data%", this.courses[k].title).replace("%url%", this.courses[k].url) + HTMLonlineSchool.replace("%data%", this.courses[k].provider) + HTMLonlineDates.replace("%data%", this.courses[k].dates);
             $("#coursesMoreText").append(course);
         }
-        $("#coursesMoreText").append(HTMLonlineReadLess);
+        courses.append(HTMLonlineReadMore);
     }
 }
 education.display();
-$(function(){ /* to make sure the script runs after page load */
-    $('a.e_read_more').click(function(event){ /* find all a.read_more elements and bind the following code to them */
-        event.preventDefault(); /* prevent the a from changing the url */
-        $(this).hide('fade');
-        $(this).parents('#courses').find('#coursesMoreText').css('display', 'inline'); /*use css as show sets display to inline-block*/
-    });
-    $('a.e_read_less').click(function(event){ /* find all a.read_more elements and bind the following code to them */
-        event.preventDefault(); /* prevent the a from changing the url */
-        $(this).parents('#courses').find('a.e_read_more').show('fade');
-        $(this).parents('#courses').find('#coursesMoreText').hide('fade'); /* hide the .more_text span */
-    });
-});
-/* --------------I16N BUTTON?---------------- */
 
-inName = function() {
-    var names = bio.name.split(" ");
-    var surname = names.pop();
-    surname = surname.toUpperCase()
-    var firstName = names.pop();
-    firstName = firstName.slice(0,1).toUpperCase() + firstName.slice(1).toLowerCase();
-    return firstName + " " + surname;
-}
-
-$("#main").append(internationalizeButton);
-
+$('a.e_read_more').showMore('#coursesMoreText', {});
 
 /* -----------------------MAP SECTION--------------------- */
 
@@ -431,3 +371,15 @@ connect.append(HTMLmobile.replace("%data%", bio.contactInfo.mobile));
 connect.append(HTMLgithub.replace("%data%", bio.contactInfo.github));
 connect.append(HTMLlocation.replace("%data%", bio.contactInfo.location));
 
+/* --------------I16N BUTTON?---------------- */
+
+inName = function() {
+    var names = bio.name.split(" ");
+    var surname = names.pop();
+    surname = surname.toUpperCase()
+    var firstName = names.pop();
+    firstName = firstName.slice(0,1).toUpperCase() + firstName.slice(1).toLowerCase();
+    return firstName + " " + surname;
+}
+
+$("body").append(internationalizeButton);
