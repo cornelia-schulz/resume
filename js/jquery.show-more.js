@@ -8,7 +8,7 @@
         var self = this;
         var on = false;
         options = options || {};
-        var expanededLabel = options.expandedLabel || 'Show Less';
+        var expandedLabel = options.expandedLabel || 'Show Less';
         var contractedLabel = options.contractedLabel || 'Show More';
 
         this.text(contractedLabel);
@@ -16,7 +16,7 @@
         var toggleState = function(toggle){
             if(toggle) {
                 $(panelId).css('display', 'inline');
-                self.text(expanededLabel);
+                self.text(expandedLabel);
                 on = true;
             }else {
                 $(panelId).css('display', 'none');

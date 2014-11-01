@@ -219,6 +219,10 @@ function initializeMap() {
     // the locations array
     pinPoster(locations);
 
+    //use instead of Vanilla JS way below as this breaks in IE7
+    $(window).on('resize', function(){
+        map.fitBounds(mapBounds);
+    });
 };
 
 /*
@@ -226,11 +230,17 @@ function initializeMap() {
  */
 
 // Calls the initializeMap() function when the page loads
-window.addEventListener('load', initializeMap);
+//window.addEventListener('load', initializeMap);
+if($(window).width() >= 750) {
+    $(window).load(function () {
+        initializeMap();
+        //alert("window is loaded");
+    });
+}
 
 // Vanilla JS way to listen for resizing of the window
 // and adjust map bounds
-window.addEventListener('resize', function(e) {
+//window.addEventListener('resize', function(e) {
 //Make sure the map bounds get updated on page resize
-map.fitBounds(mapBounds);
-});
+//map.fitBounds(mapBounds);
+//});
