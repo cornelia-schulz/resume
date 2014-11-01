@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29829547" vertical-offset="0" max-vertical-offset="900">
+            <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="900">
               <caret line="7" column="75" selection-start-line="7" selection-start-column="75" selection-end-line="7" selection-end-column="75" />
               <folding />
             </state>
@@ -63,14 +63,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="helper.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="helper.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/helper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3417" max-vertical-offset="3780">
-              <caret line="245" column="2" selection-start-line="245" selection-start-column="2" selection-end-line="245" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.1322314" vertical-offset="1572" max-vertical-offset="3780">
+              <caret line="108" column="62" selection-start-line="108" selection-start-column="62" selection-end-line="108" selection-end-column="62" />
               <folding>
-                <marker date="1414823348000" expanded="false" signature="1860:1873" placeholder="..." />
-                <marker date="1414823348000" expanded="false" signature="3143:3156" placeholder="..." />
+                <marker date="1414881950000" expanded="false" signature="1860:1873" placeholder="..." />
+                <marker date="1414881950000" expanded="false" signature="3143:3156" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -91,9 +91,9 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/js/jquery.show-more.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/js/helper.js" />
         <option value="$PROJECT_DIR$/js/resumeBuilder.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/helper.js" />
       </list>
     </option>
   </component>
@@ -340,8 +340,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="3630">
           <caret line="47" column="88" selection-start-line="47" selection-start-column="88" selection-end-line="47" selection-end-column="88" />
           <folding>
-            <marker date="1414823348000" expanded="false" signature="1860:1873" placeholder="..." />
-            <marker date="1414823348000" expanded="false" signature="3143:3156" placeholder="..." />
+            <marker date="1414881950000" expanded="false" signature="1860:1873" placeholder="..." />
+            <marker date="1414881950000" expanded="false" signature="3143:3156" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -383,8 +383,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="3660">
           <caret line="48" column="55" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="55" />
           <folding>
-            <marker date="1414823348000" expanded="false" signature="1860:1873" placeholder="..." />
-            <marker date="1414823348000" expanded="false" signature="3143:3156" placeholder="..." />
+            <marker date="1414881950000" expanded="false" signature="1860:1873" placeholder="..." />
+            <marker date="1414881950000" expanded="false" signature="3143:3156" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -393,25 +393,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07165605" vertical-offset="0" max-vertical-offset="628">
           <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/helper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3417" max-vertical-offset="3780">
-          <caret line="245" column="2" selection-start-line="245" selection-start-column="2" selection-end-line="245" selection-end-column="2" />
-          <folding>
-            <marker date="1414823348000" expanded="false" signature="1860:1873" placeholder="..." />
-            <marker date="1414823348000" expanded="false" signature="3143:3156" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery.show-more.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -433,9 +414,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29829547" vertical-offset="0" max-vertical-offset="900">
+        <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="900">
           <caret line="7" column="75" selection-start-line="7" selection-start-column="75" selection-end-line="7" selection-end-column="75" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.show-more.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/helper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1322314" vertical-offset="1572" max-vertical-offset="3780">
+          <caret line="108" column="62" selection-start-line="108" selection-start-column="62" selection-end-line="108" selection-end-column="62" />
+          <folding>
+            <marker date="1414881950000" expanded="false" signature="1860:1873" placeholder="..." />
+            <marker date="1414881950000" expanded="false" signature="3143:3156" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
