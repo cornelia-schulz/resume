@@ -204,7 +204,7 @@ var projectHistory = {
         {
             "title" : "Portfolio",
             "dates" : "2014",
-            "description" : "In this project I used HTML, CSS and the Twitter Bootstrap Framework to create a portfolio for some of my projects",
+            "description" : "In this project I used HTML, CSS and the Twitter Bootstrap Framework to create a portfolio for some of my projects.",
             "image" : "images/web-portfolio.png",
             "url" : "https://cornelias-portfolio.herokuapp.com/"
         }
@@ -383,3 +383,28 @@ inName = function() {
 }
 
 $("body").append(internationalizeButton);
+
+
+/* ------------CHECK FOR CONTENT-------------------- */
+
+if($(".flex-item").length === 0) {
+    $("#topContacts").css("display", "none");
+    $("#letsConnect").css("display", "none");
+}
+if($("h1").length === 0) {
+    $("#header").css("display", "none");
+}
+if($(".work-entry").length === 0) {
+    $("#workExperience").css("display", "none");
+}
+if($(".tab").length === 0) {
+    $("#projects").css("display", "none");
+}
+if($(".education-entry").length === 0) {
+    $("#education").css("display", "none");
+}
+if($("#map") == undefined) {
+    $("#mapDiv").css("display", "none");
+}
+
+

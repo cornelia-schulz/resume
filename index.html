@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
-    <script src="js/jquery-1.11.1.js"></script>
-    <script src="js/helper.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?libraries=geometry,places"></script>
     <link href='//fonts.googleapis.com/css?family=Lato:100,300,400%7CRaleway:100,300,400' rel='stylesheet'>
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
     <title>Cornelia Schulz CV</title>
 </head>
 <body>
@@ -47,30 +44,12 @@
             <ul id="bottomContacts" class="flex-box"></ul>
         </div>
     </div>
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/helper.js"></script>
     <script src="js/jquery.show-more.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=geometry,places"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script src="js/resumeBuilder.js"></script>
-    <script type="text/javascript">
-        if(document.getElementsByClassName("flex-item").length === 0) {
-            document.getElementById("topContacts").style.display = "none";
-        }
-        if(document.getElementsByTagName("h1").length === 0) {
-            document.getElementById("header").style.display = "none";
-        }
-        if(document.getElementsByClassName("work-entry").length === 0) {
-            document.getElementById("workExperience").style.display = "none";
-        }
-        if(document.getElementsByClassName("tab").length === 0) {
-            document.getElementById("projects").style.display = "none";
-        }
-        if(document.getElementsByClassName("education-entry").length === 0) {
-            document.getElementById("education").style.display = "none";
-        }
-        if(document.getElementsByClassName("flex-item").length === 0) {
-            document.getElementById("letsConnect").style.display = "none";
-        }
-        if(document.getElementById("map") == undefined) {
-            document.getElementById("mapDiv").style.display = "none";
-        }
-    </script>
+
 </body>
 </html>
