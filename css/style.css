@@ -347,14 +347,15 @@ span
     display: inline;
 }
 
-#skills
-{
+#skills {
     width: 100%;
     height: 500px;
 }
 
-#letsConnect
-{
+#letsConnect {
+    -webkit-align-items: center; /* Safari 7.0+ */
+    align-items: center;
+    text-align:-webkit-center;
     text-align: center;
     margin-top: 2%;
 }
