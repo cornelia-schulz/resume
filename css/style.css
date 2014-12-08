@@ -113,6 +113,8 @@ span
     font-size: 18px;
     color: #999999;
     line-height: 28px;
+    clear: both;
+    text-align: center;
 }
 
 #skillsH3
@@ -331,6 +333,14 @@ span
 .projectpic
 {
     height: 200px;
+    border: 1px solid black;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.projectpic:hover {
+    border: 1px solid #1199C3;
 }
 
 #coursesMoreText {

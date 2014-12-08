@@ -4,15 +4,12 @@ var HTMLheaderName = "<h1 id='name'>%data%</h1>";
 var HTMLheaderRole = "<span>%data%</span><hr/>";
 
 var HTMLcontactGeneric = "<li class='flex-item'><span class='orange-text'>%contact%</span><span class='white-text'>%data%</span></li>";
-var HTMLmobile = "<li class='flex-item'><span class='orange-text'>mobile</span><span class='white-text'>%data%</span></li>";
 var HTMLemail = "<li class='flex-item'><span class='orange-text'>email</span><span class='white-text'>%data%</span></li>";
-var HTMLtwitter = "<li class='flex-item'><span class='orange-text'>twitter</span><span class='white-text'>%data%</span></li>";
 var HTMLgithub = "<li class='flex-item'><span class='orange-text'>github</span><span class='white-text'>%data%</span></li>";
-var HTMLblog = "<li class='flex-item'><span class='orange-text'>blog</span><span class='white-text'>%data%</span></li>";
 var HTMLlocation = "<li class='flex-item'><span class='orange-text'>location</span><span class='white-text'>%data%</span></li>";
 
 var HTMLbioPic = "<img src='%data%' class='biopic'>";
-var HTMLWelcomeMsg = "<span class='welcome-message'>%data%</span>";
+var HTMLWelcomeMsg = "<div class='welcome-message'>%data%</div>";
 
 var HTMLskillsStart = "<div class='skills-entry'><h3 id='skillsH3'>Skills at a Glance:</h3><ul id='skills' class='flex-box'></ul>";
 var HTMLskills = "<li class='flex-item'><span class='white-text'>%data%</span></li></div>";
@@ -27,7 +24,7 @@ var HTMLworkReadMore = "<a href='#' class='w_read_more work-entry'>Show More</a>
 var HTMLworkMoreWork = "<span id ='workMoreText' style='display: none'></span>";
 
 var HTMLprojectStart = "<div class='project-entry tab' id='%data%'><input type='radio' id='%id%' name='tab-group-1' %checked%>";
-var HTMLprojectLabel = "<label for='%id%'>Project %id+1%</label>"
+var HTMLprojectLabel = "<label for='%id%'>Project %id+1%</label>";
 var HTMLprojectTitle = "<div class='tab-content'><a href='#projects'>%data%</a>";
 var HTMLprojectDates = "<div class='date-text'>%data%</div>";
 var HTMLprojectDescription = "<p><br>%data%</p>";
@@ -38,7 +35,7 @@ var HTMLschoolName = "<a href='#education'>%data%";
 var HTMLschoolDegree = " - %data%</a>";
 var HTMLschoolDates = "<div class='date-text'>%data%</div>";
 var HTMLschoolLocation = "<div class='location-text'>%data%</div>";
-var HTMLschoolMajor = "<em><br>%majors%: %data%</em></div>"
+var HTMLschoolMajor = "<em><br>%majors%: %data%</em></div>";
 
 var HTMLonlineClasses = "<h3>Courses & Certificates</h3>";
 var HTMLonlineTitle = "<div class='education-entry'><a href='%url%' target='_blank'>%data%";
@@ -59,7 +56,7 @@ $(document).ready(function() {
         var iName = inName() || function(){};
         $('#name').html(iName);
     });
-})
+});
 
 
 /*
@@ -181,7 +178,7 @@ function initializeMap() {
      */
     function callback(results, status) {
         if (status == google.maps.places.PlacesServiceStatus.OK) {
-            createMapMarker(results[0])
+            createMapMarker(results[0]);
         }
     }
 
@@ -196,7 +193,7 @@ function initializeMap() {
         var service = new google.maps.places.PlacesService(map);
 
         // Iterates through the array of locations, creates a search object for each location
-        for (place in locations) {
+        for (var place in locations) {
 
             // the search request object
             var request = {
@@ -223,7 +220,7 @@ function initializeMap() {
     $(window).on('resize', function(){
         map.fitBounds(mapBounds);
     });
-};
+}
 
 /*
  Uncomment all the code below when you're ready to implement a Google Map!
