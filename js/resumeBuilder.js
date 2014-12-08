@@ -216,7 +216,7 @@ var projectHistory = {
         {
             "title" : "Photography Website",
             "dates" : "2014",
-            "description" : "Technologies: HTML, CSS, JavaScript, jQuery, PHP. For this project I used HTML, CSS, PHP and JavaScript to create my own personal photography website. The aim was to exhibit my photographs in various categories which each come with a lightbox to enlarge the images.",
+            "description" : "Technologies: HTML, CSS, JavaScript, jQuery, PHP. This is my own personal photography website. The aim was to exhibit my photographs in various categories which each come with a lightbox to enlarge the images.",
             "image" : "images/cornelia-schulz-photography.png",
             "url" : "http://www.cornelia-schulz-photography.com"
         },
