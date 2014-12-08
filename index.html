@@ -5,51 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/build/style.css" rel="stylesheet">
     <link href='//fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet'>
-    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico"/>
     <title>Cornelia Schulz CV</title>
 </head>
 <body>
-    <div class="menu"><img class="menu-img" src="images/menu-icon.png" alt="Menu"></div>
-    <div class="menu-open">
-        <img class="menu-close" src="images/close-icon.png" alt="Close Menu">
-        <h2 class="menu-header">Menu</h2>
-        <ul class="menu-items">
-        </ul>
-    </div>
-    <div id="main">
-        <div id="header" class="center-content">
-            <ul id="topContacts" class="flex-box"></ul>
-        </div>
-        <div class="spacer"></div>
-        <div id="workExperience" class="gray">
-            <h2>Work Experience</h2>
-        </div>
-        <div id="projects">
-            <h2>Projects</h2>
-            <div class="tabs">
+<?php include_once("analyticstracking.php") ?>
+<div class="menu"><img class="menu-img" src="images/menu-icon.png" alt="Menu"></div>
+<div class="menu-open">
+    <img class="menu-close" src="images/close-icon.png" alt="Close Menu">
 
-            </div>
-        </div>
-        <div id="education" class="gray">
-            <h2>Education</h2>
-        </div>
-        <div id="skills"></div>
-        <div id="courses" class="gray">
-        </div>
-        <div id="mapDiv">
-            <h2>Where I have studied and worked</h2>
-        </div>
-        <div id="letsConnect" class="dark-gray">
-            <h2 class="orange center-text">Get in Touch</h2>
-            <ul id="bottomContacts" class="flex-box"></ul>
+    <h2 class="menu-header">Menu</h2>
+    <ul class="menu-items">
+    </ul>
+</div>
+<div id="main">
+    <div id="header" class="center-content">
+        <ul id="topContacts" class="flex-box"></ul>
+    </div>
+    <div class="spacer"></div>
+    <div id="workExperience" class="gray">
+        <h2>Work Experience</h2>
+    </div>
+    <div id="projects">
+        <h2>Projects</h2>
+
+        <div class="tabs">
+
         </div>
     </div>
-    <!--<script src="js/jquery-1.11.1.min.js"></script>
-    <script src="js/helper.js"></script>
-    <script src="js/jquery.show-more.js"></script>-->
-    <script src="https://maps.googleapis.com/maps/api/js?libraries=geometry,places"></script>
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script src="js/build/resumeBuilder.min.js"></script>
+    <div id="education" class="gray">
+        <h2>Education</h2>
+    </div>
+    <div id="skills"></div>
+    <div id="courses" class="gray">
+    </div>
+    <div id="mapDiv">
+        <h2>Where I have studied and worked</h2>
+    </div>
+    <div id="letsConnect" class="dark-gray">
+        <h2 class="orange center-text">Get in Touch</h2>
+        <ul id="bottomContacts" class="flex-box"></ul>
+    </div>
+</div>
+<!--<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/helper.js"></script>
+<script src="js/jquery.show-more.js"></script>-->
+<script src="https://maps.googleapis.com/maps/api/js?libraries=geometry,places"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script src="js/build/resumeBuilder.min.js"></script>
 
 </body>
 </html>
