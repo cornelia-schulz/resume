@@ -25,7 +25,7 @@ var HTMLworkMoreWork = "<span id ='workMoreText' style='display: none'></span>";
 
 var HTMLprojectStart = "<div class='project-entry tab' id='%data%'><input type='radio' id='%id%' name='tab-group-1' %checked%>";
 var HTMLprojectLabel = "<label for='%id%'>%id+1%</label>";
-var HTMLprojectTitle = "<div class='tab-content'><a href='#projects'>%data%</a>";
+var HTMLprojectTitle = "<div class='tab-content'><a href='%url%' target='_blank'>%data%</a>";
 var HTMLprojectDates = "<div class='date-text'>%data%</div>";
 var HTMLprojectDescription = "<p><br>%data%</p>";
 var HTMLprojectImage = "<a href='%url%' target='_blank'><img class='projectpic' src='%data%'></a></div></div>";

@@ -232,10 +232,10 @@ var projectHistory = {
     display : function() {
         for(var i = 0; i < this.project.length; i++) {
             if(i===0) {
-                var projects = HTMLprojectStart.replace("%id%", "tab-"+i).replace("%data%", "tab"+i).replace("%checked%", "checked") + HTMLprojectLabel.replace("%id%", "tab-"+i).replace("%id+1%", i+1) + HTMLprojectTitle.replace("%data%", this.project[i].title) + HTMLprojectDates.replace("%data%", this.project[i].dates) + HTMLprojectDescription.replace("%data%", this.project[i].description) + HTMLprojectImage.replace("%data%", this.project[i].image).replace("%url%", this.project[i].url);
+                var projects = HTMLprojectStart.replace("%id%", "tab-"+i).replace("%data%", "tab"+i).replace("%checked%", "checked") + HTMLprojectLabel.replace("%id%", "tab-"+i).replace("%id+1%", i+1) + HTMLprojectTitle.replace("%data%", this.project[i].title).replace("%url%", this.project[i].url) + HTMLprojectDates.replace("%data%", this.project[i].dates) + HTMLprojectDescription.replace("%data%", this.project[i].description) + HTMLprojectImage.replace("%data%", this.project[i].image).replace("%url%", this.project[i].url);
             }
             else {
-                projects = HTMLprojectStart.replace("%id%", "tab-"+i).replace("%data%", "tab"+i).replace("%checked%", "") + HTMLprojectLabel.replace("%id%", "tab-"+i).replace("%id+1%", i+1) + HTMLprojectTitle.replace("%data%", this.project[i].title) + HTMLprojectDates.replace("%data%", this.project[i].dates) + HTMLprojectDescription.replace("%data%", this.project[i].description) + HTMLprojectImage.replace("%data%", this.project[i].image).replace("%url%", this.project[i].url);            }
+                projects = HTMLprojectStart.replace("%id%", "tab-"+i).replace("%data%", "tab"+i).replace("%checked%", "") + HTMLprojectLabel.replace("%id%", "tab-"+i).replace("%id+1%", i+1) + HTMLprojectTitle.replace("%data%", this.project[i].title).replace("%url%", this.project[i].url) + HTMLprojectDates.replace("%data%", this.project[i].dates) + HTMLprojectDescription.replace("%data%", this.project[i].description) + HTMLprojectImage.replace("%data%", this.project[i].image).replace("%url%", this.project[i].url);            }
             $(".tabs").append(projects);
         }
     }
