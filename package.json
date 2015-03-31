@@ -1,0 +1,34 @@
+{
+  "name": "Resume",
+  "version": "1.0.0",
+  "description": "Cornelia Schulz Resume",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/firzhugh/resume.git"
+  },
+  "keywords": [
+    "resume",
+    "cornelia",
+    "schulz",
+    "employment",
+    "history",
+    "training",
+    "skills"
+  ],
+  "author": "Cornelia Schulz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/firzhugh/resume/issues"
+  },
+  "homepage": "https://github.com/firzhugh/resume",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.6.0"
+  }
+}

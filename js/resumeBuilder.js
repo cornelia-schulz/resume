@@ -4,7 +4,7 @@ $(".menu-img").click(function() {
     $(".menu").hide();
     $("body").animate({
         left: "185px"
-    }, 200)
+    }, 200);
 });
 
 $(".menu-close").click(function() {
@@ -17,8 +17,8 @@ $(".menu-close").click(function() {
 var menu = {
     "item" : [
         {
-            "name" : "Home",
-            "url" : "index.html"
+            "name" : "Portfolio",
+            "url" : "http://firzhugh.github.io/portfolio/"
         },
         {
             "name" : "Resume",
@@ -37,14 +37,13 @@ menu.display();
 /* -------------HEADER SECTION---------------------------- */
 var bio = {
     "name" : "Cornelia Schulz",
-    "role" : "Web Developer",
+    "role" : "Front-End Developer",
     "contactInfo" : {
-        "mobile" : "012 345 6789",
-        "email" : "cornelia_schulz@hotmail.com",
-        "github" : "firzhugh",
+        "email" : '<a href="mailto:firzhugh@gmail.com" target="_top">firzhugh@gmail.com</a>',
+        "github" : '<a href="https://github.com/firzhugh" target="_blank">firzhugh</a>',
         "location" : "Auckland"
     },
-    "pictureurl" : "https://scontent-a-sea.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/10580073_10152808820433126_5447204501324669297_n.jpg?oh=396754a3f52c0c72322461f161ab16bb&oe=54ED6E02",
+    "pictureurl" : "images/profile-pic.png",
     "welcomeMessage" : "Thanks for browsing through my CV. If you think my skills could be of value to your company, please feel free to get in touch.",
     "skills" : [['Task', 'Years Experience'],
         ['Translation',     7],
@@ -53,16 +52,22 @@ var bio = {
         ['HTML',  1],
         ['Customer Service', 12],
         ['CSS',    1],
-        ['JavaScript', 0.5]],
+        ['JavaScript', 0.7],
+        ['Knockout', 0.1],
+        ['Ajax', 0.1],
+        ['jQuery', 0.6],
+        ['Git/Github', 0.6],
+        ['Grunt', 0.2],
+        ['Bootstrap', 0.5]
+    ],
 
     display : function() {
         var header = $("#header");
         var headerClass = $(".header");
-        var formattedMobile = HTMLcontactGeneric.replace("%contact%", "mobile").replace("%data%", bio.contactInfo.mobile);
         var formattedEmail = HTMLcontactGeneric.replace("%contact%", "email").replace("%data%", bio.contactInfo.email);
         var formattedGithub = HTMLcontactGeneric.replace("%contact%", "github").replace("%data%", bio.contactInfo.github);
         var formattedLocation = HTMLcontactGeneric.replace("%contact%", "location").replace("%data%", bio.contactInfo.location);
-        $("#topContacts").append(formattedEmail, formattedMobile, formattedGithub, formattedLocation);
+        $("#topContacts").append(formattedEmail, formattedGithub, formattedLocation);
 
         header.prepend(HTMLheaderName.replace("%data%", bio.name), HTMLheaderRole.replace("%data%", bio.role));
         header.append(HTMLWelcomeMsg.replace("%data%", bio.welcomeMessage));
@@ -75,7 +80,7 @@ var bio = {
             }
         }
     }
-}
+};
 bio.display();
 
 google.load("visualization", "1", {packages:["corechart"]});
@@ -179,7 +184,7 @@ workExperience.append(HTMLworkMoreWork);
         }
         workExperience.append( HTMLworkReadMore);
         }
-    }
+    };
 workHistory.display();
 
 $('a.w_read_more').showMore('#workMoreText', {});
@@ -188,52 +193,58 @@ $('a.w_read_more').showMore('#workMoreText', {});
 var projectHistory = {
     "project" : [
         {
+            "title" : "Auckland Beaches",
+            "dates" : "2014",
+            "description" : "Technologies: HTML, CSS, JavaScript, jQuery, Knockout, Ajax. Find your favourite beach in Auckland with this page which collects information from different APIs, including Google Maps, Flickr and Wikipedia.",
+            "image" : "images/beaches.png",
+            "url" : "http://firzhugh.github.io/neighbourhood-map/"
+        },
+        {
+            "title" : "Frogger",
+            "dates" : "2014",
+            "description" : "Technologies: HTML, CSS, JavaScript, jQuery, Canvas, OOP. This is my version of the classic arcade game Frogger. Collect jewels and keys to get through the gates to hamster as many points as you can.",
+            "image" : "images/frogger.png",
+            "url" : "http://firzhugh.github.io/frogger/"
+        },
+        {
+            "title" : "Portfolio",
+            "dates" : "2014",
+            "description" : "Technologies: HTML, CSS, JavaScript, jQuery, Bootstrap. In this project I used the Twitter Bootstrap Framework to create a portfolio for my recent projects.",
+            "image" : "images/portfolio.png",
+            "url" : "http://firzhugh.github.io/portfolio/"
+        },
+        {
             "title" : "Photography Website",
             "dates" : "2014",
-            "description" : "For this project I used HTML, CSS, PHP and JavaScript to create my own personal photography website. The aim was to exhibit my photographs in various categories which each come with a lightbox to enlarge the images.",
+            "description" : "Technologies: HTML, CSS, JavaScript, jQuery, PHP. This is my own personal photography website. The aim was to exhibit my photographs in various categories which each come with a lightbox to enlarge the images.",
             "image" : "images/cornelia-schulz-photography.png",
             "url" : "http://www.cornelia-schulz-photography.com"
         },
         {
             "title" : "Rock Paper Scissors",
             "dates" : "2014",
-            "description" : "In this project I used JavaScript to create the all-time favourite Rock Paper Scissors game.",
+            "description" : "Technologies: HTML, CSS, JavaScript. In this project I used JavaScript to create the all-time favourite Rock Paper Scissors game.",
             "image" : "images/rock-paper-scissors.png",
             "url" : "https://cornelias-rock-paper-scissors.herokuapp.com/"
-        },
-        {
-            "title" : "Portfolio",
-            "dates" : "2014",
-            "description" : "In this project I used HTML, CSS and the Twitter Bootstrap Framework to create a portfolio for some of my projects.",
-            "image" : "images/web-portfolio.png",
-            "url" : "https://cornelias-portfolio.herokuapp.com/"
         }
     ],
 
     display : function() {
         for(var i = 0; i < this.project.length; i++) {
             if(i===0) {
-                var projects = HTMLprojectStart.replace("%id%", "tab-"+i).replace("%data%", "tab"+i).replace("%checked%", "checked") + HTMLprojectLabel.replace("%id%", "tab-"+i).replace("%id+1%", i+1) + HTMLprojectTitle.replace("%data%", this.project[i].title) + HTMLprojectDates.replace("%data%", this.project[i].dates) + HTMLprojectDescription.replace("%data%", this.project[i].description) + HTMLprojectImage.replace("%data%", this.project[i].image).replace("%url%", this.project[i].url);
+                var projects = HTMLprojectStart.replace("%id%", "tab-"+i).replace("%data%", "tab"+i).replace("%checked%", "checked") + HTMLprojectLabel.replace("%id%", "tab-"+i).replace("%id+1%", i+1) + HTMLprojectTitle.replace("%data%", this.project[i].title).replace("%url%", this.project[i].url) + HTMLprojectDates.replace("%data%", this.project[i].dates) + HTMLprojectDescription.replace("%data%", this.project[i].description) + HTMLprojectImage.replace("%data%", this.project[i].image).replace("%url%", this.project[i].url);
             }
             else {
-                projects = HTMLprojectStart.replace("%id%", "tab-"+i).replace("%data%", "tab"+i).replace("%checked%", "") + HTMLprojectLabel.replace("%id%", "tab-"+i).replace("%id+1%", i+1) + HTMLprojectTitle.replace("%data%", this.project[i].title) + HTMLprojectDates.replace("%data%", this.project[i].dates) + HTMLprojectDescription.replace("%data%", this.project[i].description) + HTMLprojectImage.replace("%data%", this.project[i].image).replace("%url%", this.project[i].url);            }
+                projects = HTMLprojectStart.replace("%id%", "tab-"+i).replace("%data%", "tab"+i).replace("%checked%", "") + HTMLprojectLabel.replace("%id%", "tab-"+i).replace("%id+1%", i+1) + HTMLprojectTitle.replace("%data%", this.project[i].title).replace("%url%", this.project[i].url) + HTMLprojectDates.replace("%data%", this.project[i].dates) + HTMLprojectDescription.replace("%data%", this.project[i].description) + HTMLprojectImage.replace("%data%", this.project[i].image).replace("%url%", this.project[i].url);            }
             $(".tabs").append(projects);
         }
     }
-}
+};
 projectHistory.display();
 
 /* ----------------------------EDUCATION SECTION----------------------------- */
 var education = {
     "schools" : [
-        {
-            "name" : "Comenius Grammar School",
-            "location" : "Stendal, Germany",
-            "degree" : "A-Levels",
-            "type" : "A-Level Passes",
-            "major" : ["English", " German", " Mathematics", " Geography"],
-            "dates": "1990-1996"
-        },
         {
             "name" : "Martin-Luther-University",
             "location" : "Halle(Saale), Germany",
@@ -257,22 +268,16 @@ var education = {
             "url" : "http://www.coursera.org"
         },
         {
-            "title" : "HTML & CSS",
+            "title" : "HTML, CSS, JavaScript & jQuery",
             "provider" : "Codecademy",
             "dates" : 2014,
             "url" : "http://www.codecademy.com"
         },
         {
-            "title" : "JavaScript",
-            "provider" : "Codecademy",
-            "dates" : 2014,
-            "url" : "http://www.codecademy.com"
-        },
-        {
-            "title" : "JQuery",
-            "provider" : "Codecademy",
-            "dates" : 2014,
-            "url" : "http://www.codecademy.com"
+            "title" : "Prince2 Foundation & Practitioner",
+            "provider" : "APMG",
+            "dates" : 2013,
+            "url" : "http://www.apmg-international.com/en/qualifications/prince2/prince2.aspx"
         },
         {
             "title" : "MCSA Windows 8",
@@ -343,18 +348,18 @@ var education = {
         }
         var courses = $("#courses");
         courses.append(HTMLonlineClasses);
-        for(var j = 0; j < 3; j++) {
+        for(var j = 0; j < 4; j++) {
             var course = HTMLonlineTitle.replace("%data%", this.courses[j].title).replace("%url%", this.courses[j].url) + HTMLonlineSchool.replace("%data%", this.courses[j].provider) + HTMLonlineDates.replace("%data%", this.courses[j].dates);
             courses.append(course);
         }
         courses.append(HTMLonlineMoreCourses);
-        for(var k = 3; k < this.courses.length; k++) {
+        for(var k = 4; k < this.courses.length; k++) {
             course = HTMLonlineTitle.replace("%data%", this.courses[k].title).replace("%url%", this.courses[k].url) + HTMLonlineSchool.replace("%data%", this.courses[k].provider) + HTMLonlineDates.replace("%data%", this.courses[k].dates);
             $("#coursesMoreText").append(course);
         }
         courses.append(HTMLonlineReadMore);
     }
-}
+};
 education.display();
 
 $('a.e_read_more').showMore('#coursesMoreText', {});
@@ -367,22 +372,8 @@ $("#mapDiv").append(googleMap);
 /* ----------------------CONNECT SECTION------------------- */
 var connect = $("#bottomContacts");
 connect.append(HTMLemail.replace("%data%", bio.contactInfo.email));
-connect.append(HTMLmobile.replace("%data%", bio.contactInfo.mobile));
 connect.append(HTMLgithub.replace("%data%", bio.contactInfo.github));
 connect.append(HTMLlocation.replace("%data%", bio.contactInfo.location));
-
-/* --------------I16N BUTTON?---------------- */
-
-inName = function() {
-    var names = bio.name.split(" ");
-    var surname = names.pop();
-    surname = surname.toUpperCase()
-    var firstName = names.pop();
-    firstName = firstName.slice(0,1).toUpperCase() + firstName.slice(1).toLowerCase();
-    return firstName + " " + surname;
-}
-
-$("body").append(internationalizeButton);
 
 
 /* ------------CHECK FOR CONTENT-------------------- */
@@ -403,7 +394,7 @@ if($(".tab").length === 0) {
 if($(".education-entry").length === 0) {
     $("#education").css("display", "none");
 }
-if($("#map") == undefined) {
+if($("#map") === undefined) {
     $("#mapDiv").css("display", "none");
 }
 
