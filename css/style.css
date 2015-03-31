@@ -93,7 +93,20 @@ a
 
 a:hover {
     text-decoration: underline;
+    color: #1199C3;
 }
+
+#header a, #bottomContacts a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline;
+}
+
+#header a:hover, #bottomContacts a:hover {
+    text-decoration: underline;
+}
+
 
 ul
 {
@@ -242,6 +255,10 @@ span
     padding-top: 0px;
 }
 
+#header span {
+    color: #ffffff;
+}
+
 .flex-box
 {
     display: -webkit-flex;
@@ -354,6 +371,11 @@ span
 #skills {
     width: 100%;
     height: 500px;
+}
+
+#mapDiv
+{
+    display: none;
 }
 
 #letsConnect {

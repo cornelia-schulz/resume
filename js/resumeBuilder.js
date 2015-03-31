@@ -39,11 +39,11 @@ var bio = {
     "name" : "Cornelia Schulz",
     "role" : "Front-End Developer",
     "contactInfo" : {
-        "email" : "firzhugh@gmail.com",
-        "github" : "firzhugh",
+        "email" : '<a href="mailto:firzhugh@gmail.com" target="_top">firzhugh@gmail.com</a>',
+        "github" : '<a href="https://github.com/firzhugh" target="_blank">firzhugh</a>',
         "location" : "Auckland"
     },
-    "pictureurl" : "https://scontent-a-sea.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/10580073_10152808820433126_5447204501324669297_n.jpg?oh=396754a3f52c0c72322461f161ab16bb&oe=54ED6E02",
+    "pictureurl" : "images/profile-pic.png",
     "welcomeMessage" : "Thanks for browsing through my CV. If you think my skills could be of value to your company, please feel free to get in touch.",
     "skills" : [['Task', 'Years Experience'],
         ['Translation',     7],
@@ -246,14 +246,6 @@ projectHistory.display();
 var education = {
     "schools" : [
         {
-            "name" : "Comenius Grammar School",
-            "location" : "Stendal, Germany",
-            "degree" : "A-Levels",
-            "type" : "A-Level Passes",
-            "major" : ["English", " German", " Mathematics", " Geography"],
-            "dates": "1990-1996"
-        },
-        {
             "name" : "Martin-Luther-University",
             "location" : "Halle(Saale), Germany",
             "degree" : "Masters",
@@ -276,19 +268,7 @@ var education = {
             "url" : "http://www.coursera.org"
         },
         {
-            "title" : "HTML & CSS",
-            "provider" : "Codecademy",
-            "dates" : 2014,
-            "url" : "http://www.codecademy.com"
-        },
-        {
-            "title" : "JavaScript",
-            "provider" : "Codecademy",
-            "dates" : 2014,
-            "url" : "http://www.codecademy.com"
-        },
-        {
-            "title" : "JQuery",
+            "title" : "HTML, CSS, JavaScript & jQuery",
             "provider" : "Codecademy",
             "dates" : 2014,
             "url" : "http://www.codecademy.com"
@@ -368,12 +348,12 @@ var education = {
         }
         var courses = $("#courses");
         courses.append(HTMLonlineClasses);
-        for(var j = 0; j < 3; j++) {
+        for(var j = 0; j < 4; j++) {
             var course = HTMLonlineTitle.replace("%data%", this.courses[j].title).replace("%url%", this.courses[j].url) + HTMLonlineSchool.replace("%data%", this.courses[j].provider) + HTMLonlineDates.replace("%data%", this.courses[j].dates);
             courses.append(course);
         }
         courses.append(HTMLonlineMoreCourses);
-        for(var k = 3; k < this.courses.length; k++) {
+        for(var k = 4; k < this.courses.length; k++) {
             course = HTMLonlineTitle.replace("%data%", this.courses[k].title).replace("%url%", this.courses[k].url) + HTMLonlineSchool.replace("%data%", this.courses[k].provider) + HTMLonlineDates.replace("%data%", this.courses[k].dates);
             $("#coursesMoreText").append(course);
         }
