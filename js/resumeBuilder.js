@@ -18,7 +18,7 @@ var menu = {
     "item" : [
         {
             "name" : "Portfolio",
-            "url" : "http://firzhugh.github.io/portfolio/"
+            "url" : "http://www.cornelia-schulz.info"
         },
         {
             "name" : "Resume",
