@@ -40,14 +40,14 @@ var bio = {
     "role" : "Front-End Developer",
     "contactInfo" : {
         "email" : '<a href="mailto:firzhugh@gmail.com" target="_top">firzhugh@gmail.com</a>',
-        "github" : '<a href="https://github.com/firzhugh" target="_blank">firzhugh</a>',
+        "github" : '<a href="https://github.com/cornelia-schulz" target="_blank">cornelia-schulz</a>',
         "location" : "Auckland"
     },
     "pictureurl" : "images/profile-pic.png",
     "welcomeMessage" : "Thanks for browsing through my CV. If you think my skills could be of value to your company, please feel free to get in touch.",
     "skills" : [['Task', 'Years Experience'],
         ['Translation',     7],
-        ['Localisation', 1.5],
+        ['Localisation', 6.5],
         ['Project Management',      1],
         ['HTML',  1],
         ['Customer Service', 12],
@@ -109,9 +109,24 @@ function drawChart() {
 var workHistory = {
     "work" : [
         {
+            "position" : "Localisation Coordinator",
+            "employer" : "Fraedom Company Ltd",
+            "time" : "Aug 2017 - ongoing",
+            "location" : "Auckland, NZ",
+            "description" : "Management of the localisation process within Fraedom"
+        },
+        {
+            "position" : "Software Developer - Localisation",
+            "employer" : "Fisher & Paykel Healthcare",
+            "time" : "May 2015 - Aug 2017",
+            "location" : "Auckland, NZ",
+            "description" : "Overall management of the software localisation process within Obstructive Sleep Apnoea (OSA) division"
+            "
+        },
+        {
             "position" : "Freelance Translator",
             "employer" : "Self-employed",
-            "time" : "Sep 2013 - ongoing",
+            "time" : "Sep 2013 - May 2015",
             "location" : "Auckland, NZ",
             "description" : "I worked as an English to German freelance translator for a number of companies and agencies worldwide in the following areas:	(1)Travel & Tourism (2)Technical documentation  (3)Marketing documents (brochures, leaflets, etc) (4)General. My main specialities are Technical Documentation and Travel and Tourism due to having worked and trained in these areas extensively throughout the last 8 years."
         },
@@ -255,6 +270,18 @@ var education = {
         }
     ],
     "courses" : [
+        {
+            "title" : "Web Development Bootcamp",
+            "provider" : "Enspiral Dev Academy",
+            "dates" : 2018,
+            "url" : "https://devacademy.co.nz/"
+        },
+        {
+            "title" : "ITIL Foundation",
+            "provider" : "AXELOS",
+            "dates" : 2017,
+            "url" : "https://www.axelos.com/certifications/itil-certifications/itil-foundation-level"
+        },
         {
             "title" : "Front-end Developer Nanodegree",
             "provider" : "Udacity",
