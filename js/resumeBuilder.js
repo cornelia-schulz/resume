@@ -121,7 +121,6 @@ var workHistory = {
             "time" : "May 2015 - Aug 2017",
             "location" : "Auckland, NZ",
             "description" : "Overall management of the software localisation process within Obstructive Sleep Apnoea (OSA) division"
-            "
         },
         {
             "position" : "Freelance Translator",
