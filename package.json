@@ -22,9 +22,9 @@
   "author": "Cornelia Schulz",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/firzhugh/resume/issues"
+    "url": "https://github.com/cornelia-schulz/resume/issues"
   },
-  "homepage": "https://github.com/firzhugh/resume",
+  "homepage": "https://github.com/cornelia-schulz/resume",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-cssmin": "^0.10.0",
