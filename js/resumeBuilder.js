@@ -37,7 +37,7 @@ menu.display();
 /* -------------HEADER SECTION---------------------------- */
 var bio = {
     "name" : "Cornelia Schulz",
-    "role" : "Front-End Developer",
+    "role" : "Developer",
     "contactInfo" : {
         "email" : '<a href="mailto:firzhugh@gmail.com" target="_top">firzhugh@gmail.com</a>',
         "github" : '<a href="https://github.com/cornelia-schulz" target="_blank">cornelia-schulz</a>',
@@ -49,7 +49,7 @@ var bio = {
         ['Translation',     7],
         ['Localisation', 6.5],
         ['Project Management',      1],
-        ['HTML',  1],
+        ['HTML',  3],
         ['Customer Service', 12],
         ['CSS',    1],
         ['JavaScript', 0.7],
@@ -58,7 +58,12 @@ var bio = {
         ['jQuery', 0.6],
         ['Git/Github', 0.6],
         ['Grunt', 0.2],
-        ['Bootstrap', 0.5]
+        ['Bootstrap', 0.5],
+        ['React', 0.2],
+        ['Redux', 0.2],
+        ['Knex.js', 0.2],
+        ['Express', 0.2],
+        ['Node', 0.5]
     ],
 
     display : function() {
@@ -207,32 +212,46 @@ $('a.w_read_more').showMore('#workMoreText', {});
 var projectHistory = {
     "project" : [
         {
+            "title" : "Snake",
+            "dates" : "2018",
+            "description" : "Technologies: HTML, CSS, JavaScript. My version of the popular game Snake.",
+            "image" : "images/snake.jpg",
+            "url" : "http://cornelia-schulz.github.io/snake"
+        },
+        {
+            "title" : "Minesweeper",
+            "dates" : "2018",
+            "description" : "Technologies: HTML, CSS, JavaScript. This is an Auckland version of the popular game Minesweeper.",
+            "image" : "images/minesweeper.png",
+            "url" : "http://cornelia-schulz.github.io/minesweeper"
+        },
+        {
+            "title" : "Photography Website",
+            "dates" : "2014-2018",
+            "description" : "Technologies: HTML, CSS, JavaScript, jQuery, PHP. This is my own personal photography website. The aim was to exhibit my photographs in various categories which each come with a lightbox to enlarge the images.",
+            "image" : "images/cornelia-schulz-photography.png",
+            "url" : "http://www.cornelia-schulz-photography.com"
+        },
+        {
             "title" : "Auckland Beaches",
             "dates" : "2014",
             "description" : "Technologies: HTML, CSS, JavaScript, jQuery, Knockout, Ajax. Find your favourite beach in Auckland with this page which collects information from different APIs, including Google Maps, Flickr and Wikipedia.",
             "image" : "images/beaches.png",
-            "url" : "http://firzhugh.github.io/neighbourhood-map/"
+            "url" : "http://cornelia-schulz.github.io/neighbourhood-map/"
         },
         {
             "title" : "Frogger",
             "dates" : "2014",
             "description" : "Technologies: HTML, CSS, JavaScript, jQuery, Canvas, OOP. This is my version of the classic arcade game Frogger. Collect jewels and keys to get through the gates to hamster as many points as you can.",
             "image" : "images/frogger.png",
-            "url" : "http://firzhugh.github.io/frogger/"
+            "url" : "http://cornelia-schulz.github.io/frogger/"
         },
         {
             "title" : "Portfolio",
             "dates" : "2014",
             "description" : "Technologies: HTML, CSS, JavaScript, jQuery, Bootstrap. In this project I used the Twitter Bootstrap Framework to create a portfolio for my recent projects.",
             "image" : "images/portfolio.png",
-            "url" : "http://firzhugh.github.io/portfolio/"
-        },
-        {
-            "title" : "Photography Website",
-            "dates" : "2014",
-            "description" : "Technologies: HTML, CSS, JavaScript, jQuery, PHP. This is my own personal photography website. The aim was to exhibit my photographs in various categories which each come with a lightbox to enlarge the images.",
-            "image" : "images/cornelia-schulz-photography.png",
-            "url" : "http://www.cornelia-schulz-photography.com"
+            "url" : "http://cornelia-schulz.github.io/portfolio/"
         },
         {
             "title" : "Rock Paper Scissors",
