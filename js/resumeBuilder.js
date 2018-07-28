@@ -37,7 +37,7 @@ menu.display();
 /* -------------HEADER SECTION---------------------------- */
 var bio = {
     "name" : "Cornelia Schulz",
-    "role" : "Front-End Developer",
+    "role" : "Developer",
     "contactInfo" : {
         "email" : '<a href="mailto:firzhugh@gmail.com" target="_top">firzhugh@gmail.com</a>',
         "github" : '<a href="https://github.com/cornelia-schulz" target="_blank">cornelia-schulz</a>',
