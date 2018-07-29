@@ -50,12 +50,9 @@ var bio = {
         ['Localisation', 6.5],
         ['Project Management',      1],
         ['HTML',  3],
-        ['Customer Service', 12],
         ['CSS',    1],
         ['JavaScript', 0.7],
-        ['Knockout', 0.1],
-        ['Ajax', 0.1],
-        ['jQuery', 0.6],
+        ['Ajax', 0.1], 
         ['Git/Github', 0.6],
         ['Grunt', 0.2],
         ['Bootstrap', 0.5],
@@ -63,7 +60,8 @@ var bio = {
         ['Redux', 0.2],
         ['Knex.js', 0.2],
         ['Express', 0.2],
-        ['Node', 0.5]
+        ['Node', 0.5],
+        ['jQuery', 0.6]
     ],
 
     display : function() {
@@ -231,13 +229,6 @@ var projectHistory = {
             "description" : "Technologies: HTML, CSS, JavaScript, jQuery, PHP. This is my own personal photography website. The aim was to exhibit my photographs in various categories which each come with a lightbox to enlarge the images.",
             "image" : "images/cornelia-schulz-photography.png",
             "url" : "http://www.cornelia-schulz-photography.com"
-        },
-        {
-            "title" : "Auckland Beaches",
-            "dates" : "2014",
-            "description" : "Technologies: HTML, CSS, JavaScript, jQuery, Knockout, Ajax. Find your favourite beach in Auckland with this page which collects information from different APIs, including Google Maps, Flickr and Wikipedia.",
-            "image" : "images/beaches.png",
-            "url" : "http://cornelia-schulz.github.io/neighbourhood-map/"
         },
         {
             "title" : "Frogger",
